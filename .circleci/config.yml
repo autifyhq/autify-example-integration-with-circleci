@@ -1,0 +1,47 @@
+version: 2.1
+
+orbs:
+  slack: circleci/slack@3.4.2
+
+jobs:
+  publish-to-staging:
+    docker:
+      - image: cimg/base:2020.01
+
+    steps:
+      - checkout
+
+      - run:
+          name: Run regression tests
+          command: |
+            # Prerequirements
+            # Set the following values in the Environment Variables on CircleCI for each key
+            # - AUTIFY_PERSOANL_ACCESS_TOKEN
+            # - AUTIFY_PROJECT_ID
+            # - AUTIFY_TEST_PLAN_ID
+
+            # Run a test plan on Autify
+            response=$(\
+              curl -XPOST -H "Authorization: Bearer ${AUTIFY_PERSOANL_ACCESS_TOKEN}" \
+              https://app.autify.com/api/v1/schedules/${AUTIFY_TEST_PLAN_ID} \
+            )
+
+            # Get test plan result ID to get a URL
+            test_plan_result_id=$(echo ${response} | jq -r .data.id)
+
+            # Build a result URL
+            # See: https://circleci.com/docs/2.0/env-vars/#using-parameters-and-bash-environment
+            echo "export TEST_PLAN_RESULT_URL=https://app.autify.com/projects/${AUTIFY_PROJECT_ID}/results/${test_plan_result_id}" >> $BASH_ENV
+
+      - slack/notify:
+          color: '#3d7d12'
+          message: "Regression test stared running on ${TEST_PLAN_RESULT_URL}"
+
+workflows:
+  version: 2
+  commit-workflow:
+    jobs:
+      - publish-to-staging:
+          filters:
+            branches:
+              only: develop
