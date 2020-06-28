@@ -9,4 +9,4 @@
 ## License
 
 autify-example-integration-with-circleci © Autify Engineers. Released under the [MIT License](LICENSE).<br/>
-Authored and maintained by Autify Engineers with help from [contributors](autify-example-integration-with-circleci/graphs/contributors).
+Authored and maintained by Autify Engineers with help from [contributors](https://github.com/autifyhq/autify-example-integration-with-circleci/graphs/contributors).
