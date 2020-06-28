@@ -1,5 +1,5 @@
-[circleci-badge]: https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/develop.svg?style=svg
-[circleci-link]:  https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/develop: 
+[circleci-badge]: https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/master.svg?style=svg
+[circleci-link]:  https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/master
 
 [github-action-badge]: https://github.com/autifyhq/autify-example-integration-with-circleci/workflows/Check%20Markdown%20links/badge.svg
 
