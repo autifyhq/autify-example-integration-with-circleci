@@ -16,13 +16,13 @@ jobs:
           command: |
             # Prerequirements
             # Set the following values in the Environment Variables on CircleCI for each key
-            # - AUTIFY_PERSOANL_ACCESS_TOKEN
+            # - AUTIFY_PERSONAL_ACCESS_TOKEN
             # - AUTIFY_PROJECT_ID
             # - AUTIFY_TEST_PLAN_ID
 
             # Run a test plan on Autify
             response=$(\
-              curl -XPOST -H "Authorization: Bearer ${AUTIFY_PERSOANL_ACCESS_TOKEN}" \
+              curl -XPOST -H "Authorization: Bearer ${AUTIFY_PERSONAL_ACCESS_TOKEN}" \
               https://app.autify.com/api/v1/schedules/${AUTIFY_TEST_PLAN_ID} \
             )
 
