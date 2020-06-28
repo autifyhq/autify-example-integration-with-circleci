@@ -35,7 +35,7 @@ jobs:
 
       - slack/notify:
           color: '#3d7d12'
-          message: "Regression test started running on ${TEST_PLAN_RESULT_URL}"
+          message: "Regression test stared running on ${TEST_PLAN_RESULT_URL}"
 
 workflows:
   version: 2
