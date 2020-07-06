@@ -1,6 +1,8 @@
 [circleci-badge]: https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/master.svg?style=svg
 [circleci-link]:  https://circleci.com/gh/autifyhq/autify-example-integration-with-circleci/tree/master
 
+[github-action-badge]: https://github.com/autifyhq/autify-example-integration-with-circleci/workflows/Check%20Markdown%20links/badge.svg
+
 [pr-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [pr-welcome-link]:  http://makeapullrequest.com
 
@@ -11,7 +13,7 @@
 
 # An example of how Autify and CircleCI work together
 
- [![CircleCI][circleci-badge]][circleci-link] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
+ [![CircleCI][circleci-badge]][circleci-link] ![Check Markdown links][github-action-badge] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
 
 > Learn best practices for releasing with Autify and CircleCI on your own
 
