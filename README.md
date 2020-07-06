@@ -7,12 +7,11 @@
 [example-badge]: https://img.shields.io/badge/Autify-example-brightgreen
 [example-link]:  https://github.com/search?utf8=%E2%9C%93&q=example%2Buser%3Aautifyhq&type=Repositories&ref=searchresults
 
+<p align="center">Other languages: <a href="README-ja.md">日本語</a></p>
 
-<br/><p align="center">
-  <small>Other languages: [日本語](README-ja.md)</small>
-</p><br/>
+# An example of how Autify and CircleCI work together
 
-# An example of how Autify and CircleCI work together [![CircleCI][circleci-badge]][circleci-link] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
+ [![CircleCI][circleci-badge]][circleci-link] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
 
 > Learn best practices for releasing with Autify and CircleCI on your own
 
