@@ -7,11 +7,11 @@
 [example-badge]: https://img.shields.io/badge/Autify-example-brightgreen
 [example-link]:  https://github.com/search?utf8=%E2%9C%93&q=example%2Buser%3Aautifyhq&type=Repositories&ref=searchresults
 
-<br/><p align="center">
-  <small>他の言語： [English](README.md)</small>
-</p><br/>
+<p align="center">他の言語：  <a href="README.md">English</a></p>
 
-# AutifyとCircleCIの連携例 [![CircleCI][circleci-badge]][circleci-link] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
+# AutifyとCircleCIの連携例
+
+ [![CircleCI][circleci-badge]][circleci-link] [![PRs Welcome][pr-welcome-badge]][pr-welcome-link] [![Example Badge][example-badge]][example-link]
 
 > AutifyとCircleCIを使って自身を持ってリリースするためのベストプラクティスについて説明します
 
