@@ -29,6 +29,7 @@
      | AUTIFY_PERSONAL_ACCESS_TOKEN |Autifyのユーザー設定ページで生成されるパーソナルアクセストークン|
      | AUTIFY_PROJECT_ID |AutifyでのプロジェクトID|
      | AUTIFY_TEST_PLAN_ID |Autifyで実行したいテストプランのID|
+     | SLACK_WEBHOOK	| Slack Incoming WebHooks URL |
 
 1. [`.circleci/config.yml`](.circleci/config.yml)の必要な部分をコピーして適宜変更
 
@@ -43,6 +44,10 @@
                   branches:
                     only: master
       ```
+
+## その他のCI連携パターン
+
+- [GitLab CI/CD](https://gitlab.com/autifyhq/autify-example-integration-with-gitlabci) 
 
 ## ライセンス
 
